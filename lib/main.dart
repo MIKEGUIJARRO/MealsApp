@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './screens/filters_screen.dart';
 
 import './screens/tabs_screen.dart';
 import './screens/meal_detail_screen.dart';
@@ -9,8 +10,6 @@ void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   
-
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -37,6 +36,7 @@ class MyApp extends StatelessWidget {
         "/": (ctx)=> TabsScreen(),
         CategoryMealsScreen.routeName: (ctx)=> CategoryMealsScreen(),
         MealDetailScreen.routeName: (ctx)=> MealDetailScreen(),
+        FiltersScreen.routeName: (ctx)=> FiltersScreen(),
 
       },
       /* En caso de que nuestra navegacion estandar llegue a fallar,
